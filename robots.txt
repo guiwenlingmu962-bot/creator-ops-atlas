@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guiwenlingmu962-bot.github.io/creator-ops-atlas/sitemap.xml

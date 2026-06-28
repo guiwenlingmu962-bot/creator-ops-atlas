@@ -1,0 +1,60 @@
+name: Automation fit check
+description: Request a public, synthetic-data review of one repetitive workflow.
+title: "[Fit check] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Do not include names, handles, addresses, IDs, credentials, payment data, explicit media, customer exports, or private links. Use a fictional example only. For private discussion and payment, use the Freelancer profile linked on the site.
+  - type: dropdown
+    id: region
+    attributes:
+      label: Operating region
+      options:
+        - United States
+        - Japan
+        - Other / not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: Workflow type
+      options:
+        - Inbox or inquiry triage
+        - Catalog or CSV cleanup
+        - Deliverable and renewal tracking
+        - Other administrative workflow
+    validations:
+      required: true
+  - type: textarea
+    id: current-process
+    attributes:
+      label: Current process using a fictional example
+      description: Describe the trigger, input columns, manual steps, and desired output without real data.
+      placeholder: A fictional CSV arrives weekly with 30 rows. A person standardizes three fields and flags missing values...
+    validations:
+      required: true
+  - type: textarea
+    id: human-review
+    attributes:
+      label: Where must a person approve the result?
+      placeholder: A person must approve every outgoing message and every ambiguous record.
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: Success condition
+      placeholder: Reduce manual formatting time while retaining a review queue and change log.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I used fictional data and included no sensitive or explicit content.
+          required: true
+        - label: This request does not involve minors, age uncertainty, non-consensual material, impersonation, encounters, or illegal activity.
+          required: true
