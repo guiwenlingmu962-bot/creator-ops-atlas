@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CreatorOps Atlas Service Cover</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 1200px; height: 900px; margin: 0; overflow: hidden; }
+    body {
+      position: relative;
+      display: grid;
+      place-items: center;
+      color: #f6f1fb;
+      background:
+        radial-gradient(circle at 82% 8%, rgba(200,117,244,.36), transparent 390px),
+        radial-gradient(circle at 10% 88%, rgba(155,232,200,.18), transparent 360px),
+        #0d0b14;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .frame {
+      width: 1080px;
+      height: 780px;
+      padding: 62px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 42px;
+      background: linear-gradient(145deg, rgba(255,255,255,.07), rgba(255,255,255,.02));
+      box-shadow: 0 30px 100px rgba(0,0,0,.4);
+    }
+    .brand { display: flex; align-items: center; gap: 14px; font-weight: 850; font-size: 25px; }
+    .mark { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; color: #1a0f22; background: #e5b8ff; font-size: 17px; }
+    .eyebrow { margin-top: 74px; color: #9be8c8; font-size: 18px; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
+    h1 { max-width: 900px; margin: 18px 0 22px; font-size: 72px; line-height: .98; letter-spacing: -.052em; }
+    .lead { max-width: 860px; margin: 0; color: #c6bad3; font-size: 27px; line-height: 1.38; }
+    .chips { display: flex; gap: 12px; margin-top: 42px; }
+    .chip { padding: 12px 18px; border: 1px solid rgba(155,232,200,.34); border-radius: 999px; color: #b8f3db; font-size: 18px; font-weight: 760; background: rgba(155,232,200,.06); }
+    .footer { position: absolute; left: 124px; right: 124px; bottom: 90px; display: flex; justify-content: space-between; color: #b9aec7; font-size: 17px; }
+    .price { color: #f0d2ff; font-weight: 850; }
+  </style>
+</head>
+<body>
+  <main class="frame">
+    <div class="brand"><span class="mark">CO</span> CreatorOps Atlas</div>
+    <div class="eyebrow">Human-reviewed automation</div>
+    <h1>Creator admin workflows, cleaned up.</h1>
+    <p class="lead">One focused Python workflow for inquiry triage, CSV cleanup, or operations tracking — with audit logs and human approval built in.</p>
+    <div class="chips">
+      <span class="chip">Local-first</span>
+      <span class="chip">No credential storage</span>
+      <span class="chip">3-day delivery</span>
+    </div>
+  </main>
+  <div class="footer"><span>Safe scope. Fictional setup data. One revision.</span><span class="price">Fixed price · US$199</span></div>
+</body>
+</html>
